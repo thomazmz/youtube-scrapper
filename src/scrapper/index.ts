@@ -1,2 +1,2 @@
-export { scrollReccurentlyIntoView } from './scrollReccurentlyIntoView'
+export { scrollRecursivelyIntoView } from './scrollRecursivelyIntoView'
 export { scrollIntoView } from './scrollIntoView'
