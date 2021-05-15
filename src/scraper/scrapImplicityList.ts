@@ -13,7 +13,7 @@ export const scrapImplicityList = async (page: Page, selectors: ListSelectors) =
   const { wrapperSelector, termSelector, linkSelector } = selectors
 
   const elementsList = await findElements(page, wrapperSelector)
-  return Promise.all(Array.from(elementsList).map(async element => ({
+  return Promise.all(elementsList.map(async element => ({
     term: await scrapElementText(element, termSelector),
     link: await scrapLinkUrl(element, linkSelector),
   })))
