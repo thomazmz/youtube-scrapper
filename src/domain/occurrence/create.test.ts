@@ -1,6 +1,6 @@
 import { createOccurrence } from './create'
 
-describe('createOccurence', () => {
+describe('occurrence.create', () => {
 
   const platformName = 'somePlatform'
   const platformHost = 'http://someplatform.com'
@@ -16,37 +16,37 @@ describe('createOccurence', () => {
     link,
   }
 
-  it('should have uuid', () => {
+  it('should return occurrence with uuid', () => {
     const createdOccurrence = createOccurrence(occurrenceProperties)
     expect(createdOccurrence.uuid).toBeDefined()
   })
 
-  it('should have term', () => {
+  it('should return occurrence with term', () => {
     const createdOccurrence = createOccurrence(occurrenceProperties)
     expect(createdOccurrence.term).toBe(term)
   })
 
-  it('should have link', () => {
+  it('should return occurrence with link', () => {
     const createdOccurrence = createOccurrence(occurrenceProperties)
     expect(createdOccurrence.link).toBe(link)
   })
 
-  it('should have searchDate', () => {
+  it('should return occurrence with searchDate', () => {
     const createdOccurrence = createOccurrence(occurrenceProperties)
     expect(createdOccurrence.searchDate).toBeDefined()
   })
 
-  it('should have searchTerm', () => {
+  it('should return occurrence with searchTerm', () => {
     const createdOccurrence = createOccurrence(occurrenceProperties)
     expect(createdOccurrence.searchTerm).toBe(searchTerm)
   })
 
-  it('should have platformName', () => {
+  it('should return occurrence with platformName', () => {
     const createdOccurrence = createOccurrence(occurrenceProperties)
     expect(createdOccurrence.platformName).toBe(platformName)
   })
 
-  it('should have platformHost', () => {
+  it('should return occurrence with platformHost', () => {
     const createdOccurrence = createOccurrence(occurrenceProperties)
     expect(createdOccurrence.platformHost).toBe(platformHost)
   })
